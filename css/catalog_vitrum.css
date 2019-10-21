@@ -1499,3 +1499,7 @@ card-goods .one_goods_mob .g_shadow:hover
 .one_goods .g_img {
     justify-content: flex-start;
 }
+.two_goods section {
+    display: flex;
+    flex-wrap: wrap;
+}

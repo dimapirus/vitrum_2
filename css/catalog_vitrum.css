@@ -302,6 +302,7 @@ ol, ul
 #accordion_seven label,
 #accordion_eight label
 {
+    width: fit-content;
     position    : relative;
     z-index     : 20;
     display     : flex;
@@ -325,6 +326,7 @@ ol, ul
     display       : flex;
     align-items   : center;
     padding-right : 5px;
+    margin-top : 3px;
     transition    : all 0.1s;
     transform     : rotate(180deg);
 }
@@ -378,7 +380,7 @@ ol, ul
 #accordion_seven .adress-hidden a,
 #accordion_eight .adress-hidden a
 {
-    margin-top  : 18px;
+    margin-top  : 11px;
     font-family : OpenSansSemiBold;
     font-size   : 14px;
     color       : #30333b;
@@ -757,9 +759,37 @@ input:-ms-input-placeholder
 }
 
 .goods_main .g_shadow:hover,
-card-goods .one_goods_mob .g_shadow:hover
+.card-goods .one_goods_mob .g_shadow:hover
 {
     box-shadow : 0 2px 4px 0 rgba(48, 51, 59, 0.18);
+}
+.goods_main .g_shadow:hover a,
+.card-goods .one_goods_mob .g_shadow:hover a {
+    background: #f0f2f5;
+    color: #30333b;
+}
+.goods_main .g_shadow:hover .g_art p:nth-of-type(2) a,
+.goods_main .g_shadow:hover .g_art p a {
+    background: transparent;
+    color: #57a6fa;
+}
+.goods_main .g_shadow:hover .star_good a {
+    background: transparent;
+    color: #717681;
+}
+.goods_main .g_shadow .star_good a:hover {
+    color: #0d62c2;
+    text-decoration: underline;
+}
+.goods_main .g_shadow:hover .g_buy,
+.card-goods .one_goods_mob .g_shadow:hover .g_buy {
+    background: #2581e5;
+    color: white;
+}
+.goods_main .g_shadow .g_btn a:hover,
+.card-goods .one_goods_mob .g_shadow a:hover {
+    background: #2581e5;
+    color: white;
 }
 
 .star_good span
@@ -773,7 +803,7 @@ card-goods .one_goods_mob .g_shadow:hover
     color : #d4d7db;
 }
 
-.star_good span:nth-of-type(6)
+.star_good span:nth-of-type(6) a
 {
     margin-left : 5px;
     font-family : OpenSans;
@@ -1061,7 +1091,12 @@ card-goods .one_goods_mob .g_shadow:hover
 
 .g_btn a:hover
 {
-    background : #f0f2f5;
+    background : #2581e5;
+    color: white;
+}
+.g_btn a:hover svg path
+{
+    fill: white;
 }
 
 .g_btn div a:nth-of-type(1),
@@ -1098,7 +1133,7 @@ card-goods .one_goods_mob .g_shadow:hover
     font-size       : 14px;
     color           : white;
     cursor          : auto;
-    z-index         : 10;
+    z-index         : 30;
     transition      : all 0.5s;
 }
 
@@ -1502,4 +1537,75 @@ card-goods .one_goods_mob .g_shadow:hover
 .two_goods section {
     display: flex;
     flex-wrap: wrap;
+}
+#accordion label:hover,
+#accordion_one label:hover,
+#accordion_two label:hover,
+#accordion_three label:hover,
+#accordion_four label:hover,
+#accordion_five label:hover,
+#accordion_six label:hover,
+#accordion_seven label:hover,
+#accordion_eight label:hover
+{
+    color: #2581e5;
+}
+#accordion label:hover svg path,
+#accordion_one label:hover svg path,
+#accordion_two label:hover svg path,
+#accordion_three label:hover svg path,
+#accordion_four label:hover svg path,
+#accordion_five label:hover svg path,
+#accordion_six label:hover svg path,
+#accordion_seven label:hover svg path,
+#accordion_eight label:hover svg path
+{
+    fill: #2581e5;
+}
+#accordion_three .adress-hidden_manu_two div a,
+#accordion_two .adress-hidden_manu div a {
+    margin-top : 4px;
+    padding : 7px;
+    width: fit-content;
+}
+#accordion_three .adress-hidden_manu_two div a:hover,
+#accordion_two .adress-hidden_manu div a:hover {
+   background: #f0f2f5;
+    color: #30333b;
+}
+#accordion_three .adress-hidden_manu_two div a:active,
+#accordion_two .adress-hidden_manu div a:active {
+    background: #2581e5;
+    color: white;
+}
+.g_img span {
+    position : absolute;
+    top: 5px;
+    left: 5px;
+}
+.g_img span:hover .g_toolbar_new {
+    display: flex;
+}
+.g_toolbar_new {
+    display: none;
+    position : absolute;
+    top:-36px;
+    left: -25px;
+    align-items: center;
+    justify-content: center;
+    min-width : 91px;
+    height : 31px;
+    font-family: OpenSansSemiBold;
+    font-size : 14px;
+    color: white;
+    background: #8a919c;
+}
+.g_toolbar_new:after
+{
+    position   : absolute;
+    top        : 31px;
+    content    : " ";
+    display    : block;
+    border     : 7px solid transparent;
+    border-top : 7px solid #8a919c;
 }

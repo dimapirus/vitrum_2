@@ -571,7 +571,12 @@
     .one_goods .g_none {
         display: none;
     }
-
+    .g_name
+    {
+        white-space: normal; /* Запрещаем перенос строк */
+        overflow: visible; /* Обрезаем все, что не помещается в область */
+        text-overflow: clip; /* Добавляем многоточие */
+    }
 }
 /* Portrait mini phones */
 @media (max-width : 575px)

@@ -819,6 +819,9 @@ input:-ms-input-placeholder
     font-size      : 18px;
     line-height    : 1.33;
     color          : #30333b;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
 }
 
 .g_img
@@ -1332,6 +1335,7 @@ input:-ms-input-placeholder
     width          : 100%;
     font-size      : 24px;
     padding-bottom : 16px;
+    white-space: normal;
 }
 
 .one_goods .g_right_l, .one_goods .g_right_r
@@ -1568,14 +1572,14 @@ input:-ms-input-placeholder
     padding : 7px;
     width: fit-content;
 }
-#accordion_three .adress-hidden_manu_two div a:hover,
-#accordion_two .adress-hidden_manu div a:hover {
+#accordion_three .adress-hidden_manu_two div .ctg_href:hover,
+#accordion_two .adress-hidden_manu div .ctg_href:hover {
    background: #f0f2f5;
     color: #30333b;
 }
-#accordion_three .adress-hidden_manu_two div a:active,
-#accordion_two .adress-hidden_manu div a:active {
-    background: #2581e5;
+#accordion_three .adress-hidden_manu_two div .href_active:hover,
+#accordion_two .adress-hidden_manu div .href_active:hover {
+    background: #57a6fa;
     color: white;
 }
 .g_img span {
@@ -1608,4 +1612,9 @@ input:-ms-input-placeholder
     display    : block;
     border     : 7px solid transparent;
     border-top : 7px solid #8a919c;
+}
+#accordion_two .adress-hidden .href_active,
+#accordion_three .adress-hidden .href_active{
+    background: #2581e5;
+    color: white;
 }

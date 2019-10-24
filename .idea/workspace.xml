@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="749f16c7-d147-4397-b3c0-396e9987ce04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog_vitrum.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_vitrum.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/catalog_vitrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalog_vitrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/catalog_vitrum_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalog_vitrum_media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/catalog_vitrum.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/catalog_vitrum.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +34,7 @@
   </component>
   <component name="ProjectId" id="1SbRWUT93mGd0q6rk2Q4HdBCuZ1" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -55,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571830340941</updated>
-      <workItem from="1571830342920" duration="4598000" />
+      <workItem from="1571830342920" duration="7797000" />
     </task>
     <servers />
   </component>

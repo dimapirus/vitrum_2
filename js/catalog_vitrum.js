@@ -82,6 +82,10 @@ function myFunction_sort() {
     var element = document.getElementById("drop_down_sort");
     element.classList.toggle("mystyle_menu");
 }
+function filters_applied() {
+    var element = document.getElementById("a_filters");
+    element.classList.toggle("filters_close");
+}
 jQuery('.ctg_href').click(function(){
     jQuery(this).toggleClass('href_active');
 });

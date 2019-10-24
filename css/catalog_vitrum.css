@@ -1618,3 +1618,47 @@ input:-ms-input-placeholder
     background: #2581e5;
     color: white;
 }
+.applied_filters span:nth-of-type(1){
+display: flex;
+    flex-wrap: wrap;
+}
+.applied_filters span:nth-of-type(1) a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 7px;
+    margin-right : 4px;
+    margin-bottom : 4px;
+    background: #2581e5;
+    color: white;
+    font-family: OpenSansSemiBold;
+    font-size : 14px;
+    line-height: 1.29;
+}
+.applied_filters span:nth-of-type(1) a img {
+    margin-right : 7px;
+}
+.name_applied {
+    padding-top : 18px;
+    padding-bottom : 14px;
+   font-family: OpenSansBold;
+    font-size : 18px;
+    line-height: 1.33;
+    color: #3e4149;
+}
+.close_filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width : 100%;
+    max-width: 203px;
+    margin-top : 14px;
+    padding : 12px 18px;
+    font-family: OpenSansSemiBold;
+    font-size : 14px;
+    background: #f0f2f5;
+    color: #3e4149;
+}
+.applied_filters .filters_close:nth-of-type(1) {
+    display: none;
+}

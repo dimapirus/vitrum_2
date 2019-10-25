@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="libs/jquery-ui-themes-1.12.1/themes/base/jquery-ui.min.css">
 </head>
 <body>
-<div class="page">
+<div class="page href_underline">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -82,7 +82,6 @@
       </div>
     </div>
   </div>
-</div>
 <div class="goods_top goods_top_mobile">
   <a href="#">Газовые</a>
   <a href="#">Электрические</a>
@@ -99,19 +98,35 @@
   <a href="#">Итальянские</a>
   <a href="#">Российские</a>
   <a href="#">Немецкие</a>
-  <div id="sweeties_mob" class="menu_mob" onclick="myFunction_menu_mob()">
-    <span class="title_mob">Показать еще
-      <span id="drop_down_menu_mob">
+  <div id="r-adress-2">
+    <a href="javascript:change_visibility ('r-adress-3', 'r-adress-2')">
+      Показать еще
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
           <path fill="#8A919C" fill-rule="evenodd" d="M14.242 7.465l-4.243 4.242-4.242-4.243L4.343 8.88l5.656 5.657 5.658-5.656z"/>
         </svg>
       </span>
-    </span>
-    <ul>
-      <li><a href="#">Пекарские</a></li>
-      <li><a href="#">Маленькие</a></li>
-      <li><a href="#">Итальянские</a></li>
-    </ul>
+    </a>
+  </div>
+  <div id="r-adress-3" style="display:none">
+    <div>
+      <a href="#">Газовые</a>
+      <a href="#">Электрические</a>
+      <a href="#">Бойлерные</a>
+      <a href="#">Инжекторные</a>
+      <a href="#">Механические</a>
+      <a href="#">Бытовые</a>
+      <a href="#">Кондитерские</a>
+      <a href="#">Пекарские</a>
+    </div>
+    <a href="javascript:void(0)" class="href_hide" onClick="change_visibility ('r-adress-2', 'r-adress-3')">
+      Скрыть
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <path fill="#8A919C" fill-rule="evenodd" d="M14.242 7.465l-4.243 4.242-4.242-4.243L4.343 8.88l5.656 5.657 5.658-5.656z"/>
+        </svg>
+      </span>
+    </a>
   </div>
 </div>
 <div class="container">
@@ -177,11 +192,11 @@
               <div class="applied_filters">
                 <p class="name_applied">Примененные фильтры</p>
                 <span id="a_filters">
-                <a href="javascript: void 0">AlexanderSolia</a>
-                <a href="javascript: void 0"><img src="img/country_2.png" alt="">Италия</a>
-                <a href="javascript: void 0">Neumärker</a>
-                <a href="javascript: void 0">Prince Castle</a>
-                <a href="javascript: void 0">220 В</a>
+                  <a href="javascript: void 0">AlexanderSolia</a>
+                  <a href="javascript: void 0"><img src="img/country_2.png" alt="">Италия</a>
+                  <a href="javascript: void 0">Neumärker</a>
+                  <a href="javascript: void 0">Prince Castle</a>
+                  <a href="javascript: void 0">220 В</a>
                 </span>
                 <a href="javascript: void 0" class="close_filters" onclick="filters_applied()">
                   <img src="img/x-close.svg" alt="">
@@ -202,11 +217,11 @@
                     <p class="ctg_slider">
                       <span>
                         от
-                        <input type="text" id="amount" readonly/>
+                        <input type="text" id="amount" class="input">
                         <img src="img/rub.png" alt="">
                       </span>
                       <span>
-                        от
+                        до
                         <input type="text" id="amount2" readonly/>
                         <img src="img/rub.png" alt="">
                       </span>
@@ -302,7 +317,7 @@
                         кВт
                       </span>
                       <span>
-                        от
+                        до
                         <input type="text" id="amount4" readonly/>
                         кВт
                       </span>
@@ -323,9 +338,9 @@
                   </label>
                   <div class="adress-hidden">
                     <div class="voltage">
-                      <a href="#">220 В</a>
-                      <a href="#">380 В</a>
-                      <a href="#">400 В</a>
+                      <a href="javascript: void 0" class="ctg_href">220 В</a>
+                      <a href="javascript: void 0" class="ctg_href">380 В</a>
+                      <a href="javascript: void 0" class="ctg_href">400 В</a>
                     </div>
                   </div>
                 </div>
@@ -348,7 +363,7 @@
                         мм
                       </span>
                       <span>
-                        от
+                        до
                         <input type="text" id="amount6" readonly/>
                         мм
                       </span>
@@ -375,7 +390,7 @@
                         мм
                       </span>
                       <span>
-                        от
+                        до
                         <input type="text" id="amount8" readonly/>
                         мм
                       </span>
@@ -402,7 +417,7 @@
                         мм
                       </span>
                       <span>
-                        от
+                        до
                         <input type="text" id="amount10" readonly/>
                         мм
                       </span>
@@ -445,7 +460,7 @@
       </div>
     </div>
     <div class="card-goods">
-      <div class="goods_top">
+      <div class="goods_top" id="goods_t">
         <a href="#">Газовые</a>
         <a href="#">Электрические</a>
         <a href="#">Бойлерные</a>
@@ -461,19 +476,35 @@
         <a href="#">Итальянские</a>
         <a href="#">Российские</a>
         <a href="#">Немецкие</a>
-        <div id="sweeties" class="menu_sweet" onclick="myFunction_menu()">
-          <span class="title">Показать еще
-            <span id="drop_down_menu">
+        <div id="r-adress-0">
+          <a href="javascript:change_visibility ('r-adress-1', 'r-adress-0')">
+            Показать еще
+            <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                 <path fill="#8A919C" fill-rule="evenodd" d="M14.242 7.465l-4.243 4.242-4.242-4.243L4.343 8.88l5.656 5.657 5.658-5.656z"/>
               </svg>
             </span>
-          </span>
-          <ul>
-            <li><a href="#">Пекарские</a></li>
-            <li><a href="#">Маленькие</a></li>
-            <li><a href="#">Итальянские</a></li>
-          </ul>
+          </a>
+        </div>
+        <div id="r-adress-1" style="display:none">
+          <div>
+            <a href="#">Газовые</a>
+            <a href="#">Электрические</a>
+            <a href="#">Бойлерные</a>
+            <a href="#">Инжекторные</a>
+            <a href="#">Механические</a>
+            <a href="#">Бытовые</a>
+            <a href="#">Кондитерские</a>
+            <a href="#">Пекарские</a>
+          </div>
+          <a href="javascript:void(0)" class="href_hide" onClick="change_visibility ('r-adress-0', 'r-adress-1')">
+            Скрыть
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path fill="#8A919C" fill-rule="evenodd" d="M14.242 7.465l-4.243 4.242-4.242-4.243L4.343 8.88l5.656 5.657 5.658-5.656z"/>
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
       <div class="goods_main three_goods">
@@ -487,8 +518,8 @@
           </span>
           <span class="g_img">
             <span>
-            <img src="img/new.png" alt="" class="g_new">
-            <div class="g_toolbar_new">Новинка</div>
+              <img src="img/new.png" alt="" class="g_new">
+              <div class="g_toolbar_new">Новинка</div>
             </span>
             <img src="img/goods/good.png" alt="">
           </span>

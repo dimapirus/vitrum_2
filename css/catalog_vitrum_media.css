@@ -370,8 +370,11 @@
         padding : 15px;
     }
     .goods_top_mobile {
-        display: flex;
+        display: block;
         margin-top : 24px;
+    }
+    .goods_top_mobile a{
+        display: inline;
     }
 }
 @media only screen and (max-width : 900px) {
@@ -408,7 +411,7 @@
         display: none;
     }
     .goods_top_mobile {
-        display: flex;
+        display: block;
         padding : 18px 15px ;
     }
     .row_goods {

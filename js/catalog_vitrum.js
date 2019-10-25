@@ -66,14 +66,6 @@ function myFunction_nine() {
     var element = document.getElementById("drop_down_nine");
     element.classList.toggle("mystyle");
 }
-function myFunction_menu() {
-    var element = document.getElementById("drop_down_menu");
-    element.classList.toggle("mystyle_menu");
-}
-function myFunction_menu_mob() {
-    var element = document.getElementById("drop_down_menu_mob");
-    element.classList.toggle("mystyle_menu");
-}
 function myFunction_slct() {
     var element = document.getElementById("drop_down_slct");
     element.classList.toggle("mystyle_menu");
@@ -194,6 +186,19 @@ $( function() {
     $( "#amount10" ).val( + $( "#slider-range_five" ).slider( "values", 1 ) );
 } );
 
+$( '.ctg_r_three > a' ).on( 'click', function ( e ) {
+    e.preventDefault();
+    $( '.ctg_r_three > a' ).removeClass( 'ctg_r_three_active' );
+    $( this ).addClass( 'ctg_r_three_active' );
+    $('.goods_main').hide();
+    $( $(this).data('open') ).show();
+} );
+
+function change_visibility (block_4_close, block_4_open) {
+    document.getElementById(block_4_close).style.display='inline';
+    document.getElementById(block_4_open).style.display='none';
+}
+
 let menuElem = document.getElementById('sweeties');
 let titleElem = menuElem.querySelector('.title');
 
@@ -214,12 +219,3 @@ let titleElemFilter = menuElemFilter.querySelector('.title_filter');
 titleElemFilter.onclick = function() {
     menuElemFilter.classList.toggle('open');
 };
-
-
-$( '.ctg_r_three > a' ).on( 'click', function ( e ) {
-    e.preventDefault();
-    $( '.ctg_r_three > a' ).removeClass( 'ctg_r_three_active' );
-    $( this ).addClass( 'ctg_r_three_active' );
-    $('.goods_main').hide();
-    $( $(this).data('open') ).show();
-} );

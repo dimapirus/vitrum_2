@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog_vitrum.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_vitrum.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/catalog_vitrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalog_vitrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/catalog_vitrum_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalog_vitrum_media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/catalog_vitrum.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/catalog_vitrum.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +38,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="ba" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,6 +58,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="catalog_vitrum.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vitrum_2.git/catalog_vitrum.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.catalog_vitrum.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="749f16c7-d147-4397-b3c0-396e9987ce04" name="Default Changelist" comment="" />
@@ -58,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571830340941</updated>
-      <workItem from="1571830342920" duration="10354000" />
+      <workItem from="1571830342920" duration="23785000" />
     </task>
     <servers />
   </component>
